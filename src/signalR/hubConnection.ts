@@ -1,7 +1,6 @@
 import { HubConnectionBuilder, LogLevel } from '@microsoft/signalr'
 
-const backendPath = 'https://knowitsignalrdemo2.azurewebsites.net'
-
+const backendPath = process.env.NEXT_PUBLIC_HUBCONNECTION_URL
 export const hubConnection = async (endpoint: string) => {
   const connection = new HubConnectionBuilder()
     .withUrl(`${backendPath}/${endpoint}`, {
