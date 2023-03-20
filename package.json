@@ -7,15 +7,12 @@
   },
   "scripts": {
     "dev": "next dev",
-    "build": "env-cmd -f ./env/.env.production next build",
-    "start": "set NODE_ENV=production&&env-cmd -f ./env/.env.production node server.js",
+    "build": "next build",
+    "start": "node server.js",
     "lint": "next lint",
     "prettier": "prettier --write .",
     "eslint": "eslint **/*.{js,jsx,ts,tsx}",
-    "eslintfix": "eslint **/*.{js,jsx,ts,tsx} --fix",
-    "test": "jest __tests__",
-    "test-watch": "jest --watch __tests__",
-    "test-ci": "jest __tests__ --ci --reporters=default --reporters=jest-junit"
+    "eslintfix": "eslint **/*.{js,jsx,ts,tsx} --fix"
   },
   "dependencies": {
     "@emotion/cache": "^11.10.5",
@@ -27,7 +24,6 @@
     "@types/luxon": "^3.2.0",
     "@types/signalr": "^2.4.0",
     "@typescript-eslint/parser": "^5.7.0",
-    "env-cmd": "^10.1.0",
     "luxon": "^3.2.1",
     "next": "^12.3.1",
     "react": "^18.2.0",
