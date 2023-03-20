@@ -1,0 +1,53 @@
+{
+  "name": "signalr_demo",
+  "version": "0.1.0",
+  "private": true,
+  "engines": {
+    "node": "18.14.0"
+  },
+  "scripts": {
+    "dev": "next dev",
+    "build": "env-cmd -f ./env/.env.production next build",
+    "start": "set NODE_ENV=production&&env-cmd -f ./env/.env.production node server.js",
+    "lint": "next lint",
+    "prettier": "prettier --write .",
+    "eslint": "eslint **/*.{js,jsx,ts,tsx}",
+    "eslintfix": "eslint **/*.{js,jsx,ts,tsx} --fix",
+    "test": "jest __tests__",
+    "test-watch": "jest --watch __tests__",
+    "test-ci": "jest __tests__ --ci --reporters=default --reporters=jest-junit"
+  },
+  "dependencies": {
+    "@emotion/cache": "^11.10.5",
+    "@emotion/react": "^11.10.4",
+    "@emotion/server": "^11.10.0",
+    "@emotion/styled": "^11.10.4",
+    "@microsoft/signalr": "^7.0.2",
+    "@mui/material": "^5.10.10",
+    "@types/luxon": "^3.2.0",
+    "@types/signalr": "^2.4.0",
+    "@typescript-eslint/parser": "^5.7.0",
+    "env-cmd": "^10.1.0",
+    "luxon": "^3.2.1",
+    "next": "^12.3.1",
+    "react": "^18.2.0",
+    "react-dnd-html5-backend": "^16.0.1",
+    "react-dom": "^18.2.0",
+    "react-intl": "^6.2.1",
+    "recharts": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "18.11.5",
+    "@types/react": "18.0.28",
+    "@types/react-intl": "^3.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.3.1",
+    "babel-jest": "^27.3.1",
+    "eslint": "8.35.0",
+    "eslint-config-next": "^12.3.2",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-unused-imports": "^2.0.0",
+    "prettier": "^2.7.1",
+    "typescript": "^4.8.4"
+  }
+}
