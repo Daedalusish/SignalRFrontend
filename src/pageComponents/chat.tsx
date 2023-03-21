@@ -32,6 +32,7 @@ export const ChatPage = () => {
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
+            alignItems: 'center',
           }}
         >
           <Typography variant='h5'>Hello this is horse</Typography>

@@ -1,5 +1,5 @@
-import { ChatPage } from '@/styles/pageComponents/chat'
 import type { NextPage } from 'next'
+import { ChatPage } from 'src/pageComponents/chat'
 import { SignalrDataProviderChat } from 'src/signalR/signalRContextChat'
 
 const Chat: NextPage = () => {

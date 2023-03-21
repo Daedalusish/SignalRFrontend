@@ -1,5 +1,5 @@
-import { HomePage } from '@/styles/pageComponents/home'
 import type { NextPage } from 'next'
+import { HomePage } from 'src/pageComponents/home'
 import { SignalrDataProvider } from 'src/signalR/signalRContextBasic'
 
 const Home: NextPage = () => {

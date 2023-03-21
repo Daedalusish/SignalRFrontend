@@ -17,6 +17,9 @@ export const MessageChat = ({
         maxWidth: '1000px',
         backgroundColor: 'transparent',
         height: '100%',
+        border: '1px solid',
+        minWidth: '400px',
+        borderColor: '#A5C9CA',
       }}
     >
       {messages.length === 0 ? (
@@ -35,7 +38,7 @@ export const MessageChat = ({
                 paddingTop: 1,
               }}
             >
-              <Typography>{message.username}</Typography>
+              <Typography sx={{ wordBreak: 'break-all' }}>{message.username}</Typography>
               <Box
                 sx={{
                   backgroundColor: isMatch ? '#395B64' : '#A5C9CA',
@@ -43,7 +46,7 @@ export const MessageChat = ({
                   padding: 1,
                 }}
               >
-                <Typography>{message.message}</Typography>
+                <Typography sx={{ wordBreak: 'break-all' }}>{message.message}</Typography>
               </Box>
             </Box>
           )

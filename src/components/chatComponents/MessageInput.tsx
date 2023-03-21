@@ -13,11 +13,14 @@ export const MessageInput = ({
     <Stack padding={2}>
       <TextField
         multiline
+        rows={2}
         label='message'
+        sx={{ minWidth: '300px' }}
         value={message}
         onChange={(e) => setUserMessage(e.target.value)}
+        fullWidth
       />
-      <Button onClick={submitMessage} disabled={message === ''}>
+      <Button variant='contained' onClick={submitMessage} disabled={message === ''}>
         Send
       </Button>
     </Stack>
