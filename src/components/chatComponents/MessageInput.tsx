@@ -15,7 +15,7 @@ export const MessageInput = ({
         multiline
         rows={2}
         label='message'
-        sx={{ minWidth: '300px' }}
+        sx={{ padding: 1, minWidth: { xs: '100%', sm: '300px' } }}
         value={message}
         onChange={(e) => setUserMessage(e.target.value)}
         fullWidth

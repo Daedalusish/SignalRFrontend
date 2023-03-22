@@ -20,6 +20,7 @@ export const MessageChat = ({
         border: '1px solid',
         minWidth: { xs: '100%', sm: '400px' },
         borderColor: '#A5C9CA',
+        padding: 1,
       }}
     >
       {messages.length === 0 ? (

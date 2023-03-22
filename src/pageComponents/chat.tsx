@@ -21,6 +21,8 @@ export const ChatPage = () => {
         maxHeight: '100%',
         justifyContent: 'center',
         alignItems: 'center',
+        padding: 1,
+        overflow: 'hidden',
       }}
     >
       {userName === '' ? (
