@@ -14,11 +14,11 @@ export const MessageChat = ({
         overflowY: 'auto',
         display: 'flex',
         flexDirection: 'column',
-        maxWidth: '1000px',
+        maxWidth: { xs: '100%', sm: '1000px' },
         backgroundColor: 'transparent',
         height: '100%',
         border: '1px solid',
-        minWidth: '400px',
+        minWidth: { xs: '100%', sm: '400px' },
         borderColor: '#A5C9CA',
       }}
     >
